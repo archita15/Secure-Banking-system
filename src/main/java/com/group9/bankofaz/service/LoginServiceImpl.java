@@ -2,7 +2,7 @@
  * 
  */
 package com.group9.bankofaz.service;
-
+import java.security.SecureRandom;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -21,7 +21,7 @@ import com.warrenstrange.googleauth.GoogleAuthenticator;
 import com.warrenstrange.googleauth.GoogleAuthenticatorKey;
 import com.warrenstrange.googleauth.KeyRepresentation;
 import com.warrenstrange.googleauth.GoogleAuthenticatorConfig;
-import com.warrenstrange.googleauth.GoogleAuthenticatorConfig.GoogleAuthenticatorConfigBuilder;
+
 
 import com.group9.bankofaz.component.BOASendMail;
 
@@ -32,28 +32,24 @@ import com.group9.bankofaz.component.BOASendMail;
 
 @Service
 public class LoginServiceImpl implements LoginService {
+
 	@Autowired
 	private BOASendMail boaSendEmail;
 
 	@Autowired
 	private UsersDAO usersDao;
 
-	UserOtpDAO userOtpDao;
-	UserOtp userOtp;
-	GoogleAuthenticatorConfigBuilder configBuilder;
-	GoogleAuthenticatorConfig config;
-	GoogleAuthenticator gAuth;
+	@Autowired
+	private UserOtpDAO userOtpDao;
 
-	@Override
-	public boolean validateOtp(String username, int verificationCode) {
-		userOtp = userOtpDao.get(username);
-		boolean isCodeValid = false;
+	private SecureRandom secureRandom;
 
-		if (userOtp != null) {
-			isCodeValid = (userOtp.getValidationcode() == verificationCode)
-					&& (new Date().getTime() <= userOtp.getValidity()) ? true : false;
-		}
-		return isCodeValid;
+	// Email OTP validity (you can change this as you like)
+	private static final long OTP_VALIDITY_MILLIS = TimeUnit.MINUTES.toMillis(5);
+
+	@PostConstruct
+	public void initIt() {
+		secureRandom = new SecureRandom();
 	}
 
 	@Override
