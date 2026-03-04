@@ -39,10 +39,6 @@ public class SessionDetails {
 		this.enabled = enabled;
 	}
 
-	public String getAccountSelected() {
-		return accountSelected;
-	}
-
 	public void setAccountSelected(String accountSelected) {
 		this.accountSelected = accountSelected;
 	}
@@ -63,11 +59,16 @@ public class SessionDetails {
 		this.lastname = lastname;
 	}
 
-	public int getAnothersession() {
-		return anothersession;
+	public String getAccountSelected() {
+		return accountSelected;
 	}
+
 
 	public void setAnothersession(int anothersession) {
 		this.anothersession = anothersession;
+	}
+
+	public int getAnothersession() {
+		return anothersession;
 	}
 }
