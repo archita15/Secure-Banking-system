@@ -51,6 +51,7 @@ public class LoginServiceImpl implements LoginService {
 	public void initIt() {
 		secureRandom = new SecureRandom();
 	}
+	
 
 	@Override
 	public int generateOTP(String username) {
