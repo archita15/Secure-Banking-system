@@ -1,6 +1,6 @@
 package com.group9.bankofaz.model;
 
-import java.beans.Transient;
+import javax.persistence.Transient;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -98,7 +98,7 @@ public class Task implements ILogs{
 		sb.append(" task ").append(" taskid :" ).append(taskid)
 		.append(" message : ").append(message)
 		.append(" status : ").append(status)
-		.append(" tid : ").append(tid.getTid())
+		.append(" tid : ").append(tid != null ? tid.getTid() : "null")
 		.append(" assigneeid : ").append(assigneeid);
 
 		return sb.toString();
