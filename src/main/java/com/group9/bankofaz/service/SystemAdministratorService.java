@@ -1,7 +1,5 @@
 
 package com.group9.bankofaz.service;
-
-import java.util.Date;
 import java.util.List;
 
 import com.group9.bankofaz.exception.AuthorizationException;
@@ -15,24 +13,22 @@ import com.group9.bankofaz.model.Users;
  *
  */
 public interface SystemAdministratorService {
-	public void addInternalUserAccount(InternalUser internalUser) throws AuthorizationException;
 
-	public void modifyInternalUserAccount(InternalUser internalUser) throws AuthorizationException;
+    void addInternalUserAccount(InternalUser internalUser) throws AuthorizationException;
 
-	public void deleteInternalUserAccount(InternalUser internalUser) throws AuthorizationException;
+    void updateInternalUserAccount(InternalUser internalUser) throws AuthorizationException;
 
-	public List<Logs> viewSystemLogs();
-	
-	public void setUser(String email);
+    void deleteInternalUserAccount(long internalUserId) throws AuthorizationException;
 
-	public void completeTask(int taskid);
-	
-	public void updateInfo(InternalUser user);
-	
-	public void updateTasks();
-	
-	public List<Task> getTasks();  
-	
-	public void updatePasswd(Users user);
+    List<Logs> viewSystemLogs() throws AuthorizationException;
 
+    List<Task> getTasks() throws AuthorizationException;
+
+    void completeTask(int taskId) throws AuthorizationException;
+
+    void refreshTasks() throws AuthorizationException;
+
+    void updateInternalUserInfo(InternalUser user) throws AuthorizationException;
+
+    void updatePassword(Users user) throws AuthorizationException;
 }
