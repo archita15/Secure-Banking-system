@@ -6,7 +6,7 @@ package com.group9.bankofaz.service;
 import com.group9.bankofaz.model.Users;
 
 /**
- * @author Anirudh Ruia Gali
+ * @author Archita Palkar
  *
  */
 public interface LoginService {

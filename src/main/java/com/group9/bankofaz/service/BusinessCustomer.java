@@ -9,7 +9,7 @@ import com.group9.bankofaz.model.BankAccount;
 import com.group9.bankofaz.model.Transaction;
 
 /**
- * @author Sravani Puttagunta
+ * @author Archita Palkar
  *
  */
 public class BusinessCustomer {

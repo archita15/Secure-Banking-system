@@ -10,7 +10,7 @@ import com.group9.bankofaz.model.Pii;
 import com.group9.bankofaz.model.Users;
 
 /**
- * @author Vishnu Priya
+ * @author Archita Palkar
  *
  */
 public interface RegistrationService {

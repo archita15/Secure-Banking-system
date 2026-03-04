@@ -1,7 +1,7 @@
 package com.group9.bankofaz.model;
 
 /**
- * @author Anirudh Ruia Gali
+ * @author Archita Palkar
  *
  */
 

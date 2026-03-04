@@ -12,7 +12,7 @@ import com.group9.bankofaz.model.Transaction;
 import com.group9.bankofaz.model.Users;
 
 /**
- * @author Anirudh Ruia Gali
+ * @author Archita Palkar
  *
  */
 public interface SystemManagerService {

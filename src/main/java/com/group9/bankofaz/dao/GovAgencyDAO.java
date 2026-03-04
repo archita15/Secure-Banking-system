@@ -6,7 +6,7 @@ package com.group9.bankofaz.dao;
 import com.group9.bankofaz.model.GovAgency;
 
 /**
- * @author Anirudh Ruia Gali
+ * @author Archita Palkar
  *
  */
 public interface GovAgencyDAO {

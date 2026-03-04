@@ -7,7 +7,7 @@ import com.group9.bankofaz.exception.IllegalTransactionException;
 import com.group9.bankofaz.model.Transaction;
 
 /**
- * @author Anirudh Ruia Gali
+ * @author Archita Palkar
  *
  */
 

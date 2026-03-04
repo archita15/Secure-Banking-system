@@ -29,7 +29,7 @@ import com.group9.bankofaz.model.Users;
 import com.group9.bankofaz.service.LoginService;
 
 /**
- * @author Vishnu Priya Chandra Sekar
+ * @author Archita Palkar
  *
  */
 

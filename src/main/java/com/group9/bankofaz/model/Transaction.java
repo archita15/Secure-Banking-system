@@ -20,7 +20,7 @@ import org.hibernate.annotations.SelectBeforeUpdate;
 import com.group9.bankofaz.interceptor.ILogs;
 
 /**
- * @author Chandrani Mukherjee
+ * @author Archita Palkar
  *
  */
 

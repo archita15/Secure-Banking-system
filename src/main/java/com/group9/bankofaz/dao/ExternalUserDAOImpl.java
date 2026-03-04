@@ -18,7 +18,7 @@ import com.group9.bankofaz.model.ExternalUser;
 import com.group9.bankofaz.model.Logs;
 
 /**
- * @author cmukherj
+ * @author Archita Palkar
  *
  */
 

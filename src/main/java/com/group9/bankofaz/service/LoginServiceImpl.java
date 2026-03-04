@@ -26,7 +26,7 @@ import com.warrenstrange.googleauth.GoogleAuthenticatorConfig.GoogleAuthenticato
 import com.group9.bankofaz.component.BOASendMail;
 
 /**
- * @authors Reshma Venkat
+ * @authors Archita Palkar
  *
  */
 

@@ -3,7 +3,7 @@ package com.group9.bankofaz.model;
 import java.beans.Transient;
 
 /**
- * @author Anirudh Ruia Gali
+ * @author Archita Palkar
  *
  */
 

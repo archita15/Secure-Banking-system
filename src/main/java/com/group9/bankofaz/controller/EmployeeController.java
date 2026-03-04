@@ -40,7 +40,7 @@ import com.group9.bankofaz.service.SystemAdministratorService;
 import com.group9.bankofaz.service.SystemManagerService;
 
 /**
- * @author Anirudh Ruia Gali
+ * @author Archita Palkar
  *
  */
 

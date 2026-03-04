@@ -10,7 +10,7 @@ import java.util.List;
 import com.group9.bankofaz.model.Logs;
 
 /**
- * @author Anirudh Ruia Gali
+ * @author Archita Palkar
  *
  */
 public interface LogsDAO {

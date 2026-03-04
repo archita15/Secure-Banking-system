@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import com.group9.bankofaz.model.InternalUser;
 
 /**
- * @author Anirudh Ruia Gali
+ * @author Archita Palkar
  *
  */
 

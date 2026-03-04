@@ -8,7 +8,7 @@ import java.util.List;
 import com.group9.bankofaz.model.BankAccount;
 
 /**
- * @author Anirudh Ruia Gali
+ * @author Archita Palkar
  *
  */
 public interface BankAccountDAO {
